@@ -93,6 +93,7 @@ func init() {
 	jsonData = jsonContent{}
 
 	err := json.Unmarshal(data, &jsonData)
+    fmt.Println("loaded", len(jsonData.FirstNamesMale))
 
 	if err != nil {
 		log.Fatal(err)
